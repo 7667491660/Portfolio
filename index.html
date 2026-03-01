@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Kr Sinha — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AKS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="mailto:arpitkrsinha728@gmail.com" class="nav-btn">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">ARPIT</div>
+    <div class="hero-content">
+      <div class="hero-photo-col">
+        <div class="photo-frame">
+          <div class="photo-border"></div>
+          <img src="IMG_20230914_105911_Original.jpg" alt="Arpit Kr Sinha"
+            onerror="this.style.display='none'; document.querySelector('.photo-placeholder').style.display='flex';">
+          <div class="photo-placeholder">AKS</div>
+          <div class="photo-glow"></div>
+        </div>
+        <div class="photo-tag">
+          <span class="tag-dot"></span>
+          Available for Work
+        </div>
+      </div>
+      <div class="hero-text-col">
+        <p class="hero-overline">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="line-1">Arpit Kr</span>
+          <span class="line-2">Sinha<em class="name-accent">.</em></span>
+        </h1>
+        <div class="typewriter-box">
+          <span class="tw-prefix">I'm a </span>
+          <span id="typed"></span><span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          3rd-year Computer Science student building purposeful digital products. 
+          Passionate about solving real-world problems — one line of code at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-gold">View My Work</a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3rd</span>
+            <span class="stat-label">Year</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a driven developer who loves the intersection of design and technology.
+          </p>
+          <p class="about-body">
+            Currently in my 3rd year of Computer Science, I've been building projects 
+            that go beyond the classroom — real platforms, real users, real impact. 
+            I thrive on challenges that require both creative and analytical thinking.
+          </p>
+          <p class="about-body">
+            My biggest motivation? Seeing something I built actually help people. 
+            I'm always ready to learn, collaborate, and jump into opportunities that push me forward.
+          </p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <div class="card-icon">🎓</div>
+            <div>
+              <h4>Education</h4>
+              <p>3rd Year · Computer Science</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>India</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">💼</div>
+            <div>
+              <h4>Status</h4>
+              <p>Open to Opportunities</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">⚡</div>
+            <div>
+              <h4>Focus</h4>
+              <p>Full-Stack Web Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-num">01</div>
+            <div class="project-links">
+              <span class="proj-tag">Web App</span>
+            </div>
+          </div>
+          <div class="project-icon-wrap">
+            <span class="project-emoji">🚗</span>
+          </div>
+          <h3 class="project-name">Car Rental Website</h3>
+          <p class="project-desc">
+            A comprehensive car rental platform with vehicle browsing, booking management, and user authentication — built for seamless user experience.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status live">Completed</span>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal">
+          <div class="featured-badge">Featured</div>
+          <div class="project-top">
+            <div class="project-num">02</div>
+            <div class="project-links">
+              <span class="proj-tag">EdTech</span>
+            </div>
+          </div>
+          <div class="project-icon-wrap">
+            <span class="project-emoji">📚</span>
+          </div>
+          <h3 class="project-name">Study Sphere</h3>
+          <p class="project-desc">
+            An online study platform that gives students access to structured resources, making learning more organized, accessible, and effective.
+          </p>
+          <div class="project-tech">
+            <span>Full-Stack</span><span>Web Platform</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status live">Completed</span>
+          </div>
+        </div>
+
+        <div class="project-card coming reveal">
+          <div class="project-top">
+            <div class="project-num">03</div>
+          </div>
+          <div class="project-icon-wrap">
+            <span class="project-emoji">🔧</span>
+          </div>
+          <h3 class="project-name">Next Project</h3>
+          <p class="project-desc">
+            Something exciting is in the works. Building the next solution to a real-world problem — stay tuned.
+          </p>
+          <div class="project-footer">
+            <span class="project-status wip">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-pill">HTML5</div>
+        <div class="skill-pill">CSS3</div>
+        <div class="skill-pill">JavaScript</div>
+        <div class="skill-pill">Web Development</div>
+        <div class="skill-pill">Responsive Design</div>
+        <div class="skill-pill">Problem Solving</div>
+        <div class="skill-pill">Git & GitHub</div>
+        <div class="skill-pill">UI/UX Thinking</div>
+        <div class="skill-pill">Real-World Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-left">
+          <span class="section-num">04</span>
+          <h2 class="contact-title">Let's Build<br><em>Something</em><br>Together.</h2>
+          <p class="contact-sub">
+            I'm always open to great opportunities, collaborations, and conversations. 
+            Don't hesitate to reach out.
+          </p>
+        </div>
+        <div class="contact-right">
+          <a href="mailto:arpitkrsinha728@gmail.com" class="contact-card">
+            <div class="cc-icon">✉</div>
+            <div class="cc-info">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">arpitkrsinha728@gmail.com</span>
+            </div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <a href="tel:+917667491660" class="contact-card">
+            <div class="cc-icon">📞</div>
+            <div class="cc-info">
+              <span class="cc-label">Phone</span>
+              <span class="cc-value">+91 76674 91660</span>
+            </div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <div class="contact-footer-note">
+            <span>⚡ Usually responds within 24 hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">AKS<span class="dot">.</span></div>
+      <p class="footer-copy">© 2024 Arpit Kr Sinha — Crafted with passion & code.</p>
+      <p class="footer-back"><a href="#home">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
